@@ -1565,45 +1565,4 @@ footer {
     flex-shrink: 0;
   }
 
-  /* 3D image container */
-  .hero-art {
-    width: 100%;
-    height: 450px;
-    min-height: 450px;
-    position: relative;
-    margin-top: 0;
-    z-index: 1;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  /* Image frame */
-  .hero-art .art-frame {
-    width: min(82vw, 320px);
-    max-width: 320px;
-    aspect-ratio: 3 / 4;
-    position: relative;
-    z-index: 2;
-  }
-
-  /* Floating icons stay around image */
-  .floaty {
-    z-index: 5;
-  }
-
-  .f1 {
-    left: 4%;
-    top: 10px;
-  }
-
-  .f2 {
-    right: 4%;
-    bottom: 35px;
-  }
-
-  .f3 {
-    right: 2%;
-    top: 48%;
-  }
 }
