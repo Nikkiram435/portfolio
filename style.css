@@ -1,17 +1,18 @@
-/* ================================
+/* =========================================
    GOOGLE FONTS
-================================ */
+========================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap');
 
 
-/* ================================
+/* =========================================
    ROOT VARIABLES
-================================ */
+========================================= */
 
 :root {
   --bg: #070a17;
   --bg-light: #0d1124;
+
   --card: rgba(255, 255, 255, 0.05);
   --card-border: rgba(255, 255, 255, 0.10);
 
@@ -38,9 +39,9 @@
 }
 
 
-/* ================================
+/* =========================================
    RESET
-================================ */
+========================================= */
 
 * {
   margin: 0;
@@ -50,10 +51,13 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
   font-family: "Inter", sans-serif;
+
   background:
     radial-gradient(
       circle at 20% 10%,
@@ -68,8 +72,13 @@ body {
     var(--bg);
 
   color: var(--text);
+
   line-height: 1.6;
+
   overflow-x: hidden;
+
+  width: 100%;
+  max-width: 100%;
 }
 
 img {
@@ -88,9 +97,9 @@ a {
 }
 
 
-/* ================================
+/* =========================================
    CONTAINER
-================================ */
+========================================= */
 
 .container {
   width: min(92%, var(--max-width));
@@ -98,9 +107,9 @@ a {
 }
 
 
-/* ================================
+/* =========================================
    SECTION
-================================ */
+========================================= */
 
 section {
   padding: 100px 0;
@@ -108,14 +117,16 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    NAVBAR
-================================ */
+========================================= */
 
 .navbar {
   position: fixed;
+
   top: 0;
   left: 0;
+
   width: 100%;
 
   z-index: 1000;
@@ -123,36 +134,51 @@ section {
   padding: 20px 0;
 
   background: rgba(7, 10, 23, 0.75);
+
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.06);
 }
 
 .nav-container {
   width: min(92%, var(--max-width));
+
   margin: auto;
 
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 }
 
 .logo {
   font-family: "Sora", sans-serif;
+
   font-size: 24px;
+
   font-weight: 700;
 
   background: var(--gradient);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   white-space: nowrap;
 }
 
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
 .nav-links {
   display: flex;
+
   align-items: center;
+
   gap: 30px;
 }
 
@@ -160,6 +186,7 @@ section {
   position: relative;
 
   font-size: 14px;
+
   font-weight: 500;
 
   color: var(--muted);
@@ -175,10 +202,13 @@ section {
   content: "";
 
   position: absolute;
+
   left: 0;
+
   bottom: -7px;
 
   width: 0;
+
   height: 2px;
 
   background: var(--gradient);
@@ -191,9 +221,9 @@ section {
 }
 
 
-/* ================================
-   MOBILE MENU
-================================ */
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
 
 .menu-toggle {
   display: none;
@@ -203,7 +233,8 @@ section {
 
   border-radius: 10px;
 
-  border: 1px solid var(--card-border);
+  border:
+    1px solid var(--card-border);
 
   background: var(--card);
 
@@ -215,14 +246,15 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    HOME
-================================ */
+========================================= */
 
 #home {
   min-height: 100vh;
 
   display: flex;
+
   align-items: center;
 
   padding-top: 140px;
@@ -241,30 +273,35 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    HERO CONTENT
-================================ */
+========================================= */
 
 .hero {
   position: relative;
+
   z-index: 10;
 }
 
 .eyebrow {
   display: inline-flex;
+
   align-items: center;
 
   padding: 8px 14px;
 
   border-radius: 30px;
 
-  background: rgba(139, 92, 246, 0.10);
+  background:
+    rgba(139, 92, 246, 0.10);
 
-  border: 1px solid rgba(139, 92, 246, 0.25);
+  border:
+    1px solid rgba(139, 92, 246, 0.25);
 
   color: var(--primary-light);
 
   font-size: 13px;
+
   font-weight: 600;
 
   margin-bottom: 20px;
@@ -273,7 +310,8 @@ section {
 .hero h1 {
   font-family: "Sora", sans-serif;
 
-  font-size: clamp(42px, 6vw, 72px);
+  font-size:
+    clamp(42px, 6vw, 72px);
 
   line-height: 1.08;
 
@@ -282,14 +320,11 @@ section {
   margin-bottom: 12px;
 }
 
-.hero h1::first-letter {
-  color: var(--primary-light);
-}
-
 .hero .role {
   font-family: "Sora", sans-serif;
 
-  font-size: clamp(24px, 3vw, 36px);
+  font-size:
+    clamp(24px, 3vw, 36px);
 
   font-weight: 600;
 
@@ -298,6 +333,7 @@ section {
   background: var(--gradient);
 
   -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
@@ -314,9 +350,9 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    BUTTONS
-================================ */
+========================================= */
 
 .btn-row {
   display: flex;
@@ -332,6 +368,7 @@ section {
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   padding: 13px 22px;
@@ -339,6 +376,7 @@ section {
   border-radius: 12px;
 
   font-size: 14px;
+
   font-weight: 600;
 
   transition: 0.3s ease;
@@ -352,20 +390,24 @@ section {
   color: white;
 
   box-shadow:
-    0 10px 30px rgba(139, 92, 246, 0.25);
+    0 10px 30px
+    rgba(139, 92, 246, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
 
   box-shadow:
-    0 15px 40px rgba(139, 92, 246, 0.35);
+    0 15px 40px
+    rgba(139, 92, 246, 0.35);
 }
 
 .btn-outline {
-  border: 1px solid var(--card-border);
+  border:
+    1px solid var(--card-border);
 
-  background: rgba(255, 255, 255, 0.03);
+  background:
+    rgba(255, 255, 255, 0.03);
 
   color: var(--text);
 }
@@ -373,15 +415,16 @@ section {
 .btn-outline:hover {
   border-color: var(--primary);
 
-  background: rgba(139, 92, 246, 0.08);
+  background:
+    rgba(139, 92, 246, 0.08);
 
   transform: translateY(-3px);
 }
 
 
-/* ================================
-   SOCIAL ICONS
-================================ */
+/* =========================================
+   SOCIAL ROW
+========================================= */
 
 .social-row {
   display: flex;
@@ -397,18 +440,22 @@ section {
 
 .social-row a {
   width: 42px;
+
   height: 42px;
 
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   border-radius: 12px;
 
-  border: 1px solid var(--card-border);
+  border:
+    1px solid var(--card-border);
 
-  background: rgba(255, 255, 255, 0.04);
+  background:
+    rgba(255, 255, 255, 0.04);
 
   color: var(--muted);
 
@@ -418,17 +465,19 @@ section {
 .social-row a:hover {
   color: white;
 
-  background: rgba(139, 92, 246, 0.15);
+  background:
+    rgba(139, 92, 246, 0.15);
 
-  border-color: rgba(139, 92, 246, 0.45);
+  border-color:
+    rgba(139, 92, 246, 0.45);
 
   transform: translateY(-4px);
 }
 
 
-/* ================================
+/* =========================================
    HERO ART
-================================ */
+========================================= */
 
 .hero-art {
   position: relative;
@@ -436,6 +485,7 @@ section {
   display: flex;
 
   justify-content: center;
+
   align-items: center;
 
   height: 420px;
@@ -456,7 +506,8 @@ section {
 
   overflow: hidden;
 
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border:
+    1px solid rgba(255, 255, 255, 0.12);
 
   background:
     radial-gradient(
@@ -467,24 +518,27 @@ section {
     rgba(255, 255, 255, 0.03);
 
   box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.45);
+    0 30px 80px
+    rgba(0, 0, 0, 0.45);
 
-  animation: float 5s ease-in-out infinite;
+  animation:
+    float 5s ease-in-out infinite;
 
   z-index: 2;
 }
 
 .hero-art .art-frame img {
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
 }
 
 
-/* ================================
+/* =========================================
    FLOATING ELEMENTS
-================================ */
+========================================= */
 
 .floaty {
   position: absolute;
@@ -493,16 +547,19 @@ section {
 
   border-radius: 14px;
 
-  background: rgba(13, 17, 36, 0.8);
+  background:
+    rgba(13, 17, 36, 0.8);
 
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border:
+    1px solid rgba(255, 255, 255, 0.10);
 
   backdrop-filter: blur(12px);
 
   -webkit-backdrop-filter: blur(12px);
 
   box-shadow:
-    0 15px 40px rgba(0, 0, 0, 0.25);
+    0 15px 40px
+    rgba(0, 0, 0, 0.25);
 
   font-size: 13px;
 
@@ -513,25 +570,29 @@ section {
 
 .f1 {
   left: 0;
+
   top: 12%;
 }
 
 .f2 {
   right: 0;
+
   bottom: 15%;
 }
 
 .f3 {
   right: 3%;
+
   top: 35%;
 }
 
 
-/* ================================
+/* =========================================
    FLOAT ANIMATION
-================================ */
+========================================= */
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
@@ -543,9 +604,9 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    SECTION TITLE
-================================ */
+========================================= */
 
 .section-title {
   text-align: center;
@@ -572,7 +633,8 @@ section {
 .section-title h2 {
   font-family: "Sora", sans-serif;
 
-  font-size: clamp(30px, 4vw, 46px);
+  font-size:
+    clamp(30px, 4vw, 46px);
 
   line-height: 1.2;
 
@@ -590,9 +652,9 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    ABOUT
-================================ */
+========================================= */
 
 .about-grid {
   display: grid;
@@ -617,14 +679,15 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    STATS
-================================ */
+========================================= */
 
 .stat-row {
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:
+    repeat(3, 1fr);
 
   gap: 18px;
 
@@ -638,7 +701,8 @@ section {
 
   background: var(--card);
 
-  border: 1px solid var(--card-border);
+  border:
+    1px solid var(--card-border);
 
   text-align: center;
 
@@ -648,7 +712,8 @@ section {
 .stat-card:hover {
   transform: translateY(-5px);
 
-  border-color: rgba(139, 92, 246, 0.35);
+  border-color:
+    rgba(139, 92, 246, 0.35);
 }
 
 .stat-card h3 {
@@ -661,6 +726,7 @@ section {
   background: var(--gradient);
 
   -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
@@ -671,14 +737,15 @@ section {
 }
 
 
-/* ================================
-   CARDS
-================================ */
+/* =========================================
+   CARD
+========================================= */
 
 .card {
   background: var(--card);
 
-  border: 1px solid var(--card-border);
+  border:
+    1px solid var(--card-border);
 
   border-radius: var(--radius);
 
@@ -687,22 +754,25 @@ section {
   transition: 0.3s ease;
 
   box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.12);
+    0 10px 30px
+    rgba(0, 0, 0, 0.12);
 }
 
 .card:hover {
   transform: translateY(-6px);
 
-  border-color: rgba(139, 92, 246, 0.35);
+  border-color:
+    rgba(139, 92, 246, 0.35);
 
   box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.25);
+    0 20px 50px
+    rgba(0, 0, 0, 0.25);
 }
 
 
-/* ================================
+/* =========================================
    SKILLS
-================================ */
+========================================= */
 
 .skills-grid {
   display: grid;
@@ -734,9 +804,11 @@ section {
 
   border-radius: 8px;
 
-  background: rgba(255, 255, 255, 0.05);
+  background:
+    rgba(255, 255, 255, 0.05);
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
 
   color: var(--muted);
 
@@ -744,9 +816,9 @@ section {
 }
 
 
-/* ================================
-   PORTFOLIO
-================================ */
+/* =========================================
+   PORTFOLIO TABS
+========================================= */
 
 .portfolio-tabs {
   display: flex;
@@ -765,9 +837,11 @@ section {
 
   border-radius: 10px;
 
-  border: 1px solid var(--card-border);
+  border:
+    1px solid var(--card-border);
 
-  background: rgba(255, 255, 255, 0.03);
+  background:
+    rgba(255, 255, 255, 0.03);
 
   color: var(--muted);
 
@@ -780,17 +854,19 @@ section {
 
 .portfolio-tabs button:hover,
 .portfolio-tabs button.active {
-  background: rgba(139, 92, 246, 0.15);
+  background:
+    rgba(139, 92, 246, 0.15);
 
   color: white;
 
-  border-color: rgba(139, 92, 246, 0.4);
+  border-color:
+    rgba(139, 92, 246, 0.4);
 }
 
 
-/* ================================
+/* =========================================
    PROJECT GRID
-================================ */
+========================================= */
 
 .project-grid {
   display: grid;
@@ -822,6 +898,7 @@ section {
 
 .project-image img {
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
@@ -829,7 +906,8 @@ section {
   transition: 0.4s ease;
 }
 
-.project-card:hover .project-image img {
+.project-card:hover
+.project-image img {
   transform: scale(1.06);
 }
 
@@ -868,7 +946,8 @@ section {
 
   border-radius: 7px;
 
-  background: rgba(139, 92, 246, 0.10);
+  background:
+    rgba(139, 92, 246, 0.10);
 
   color: var(--primary-light);
 
@@ -876,9 +955,9 @@ section {
 }
 
 
-/* ================================
-   EDUCATION
-================================ */
+/* =========================================
+   EDUCATION TIMELINE
+========================================= */
 
 .timeline {
   position: relative;
@@ -894,7 +973,9 @@ section {
   position: absolute;
 
   left: 18px;
+
   top: 0;
+
   bottom: 0;
 
   width: 2px;
@@ -919,16 +1000,19 @@ section {
   position: absolute;
 
   left: 8px;
+
   top: 5px;
 
   width: 22px;
+
   height: 22px;
 
   border-radius: 50%;
 
   background: var(--bg);
 
-  border: 3px solid var(--primary);
+  border:
+    3px solid var(--primary);
 
   z-index: 2;
 }
@@ -960,9 +1044,9 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    EXPERIENCE
-================================ */
+========================================= */
 
 .experience-grid {
   display: grid;
@@ -1015,9 +1099,9 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    CONTACT
-================================ */
+========================================= */
 
 .contact-card {
   max-width: 850px;
@@ -1038,7 +1122,8 @@ section {
     ),
     var(--card);
 
-  border: 1px solid var(--card-border);
+  border:
+    1px solid var(--card-border);
 }
 
 .contact-card h2 {
@@ -1068,14 +1153,15 @@ section {
 }
 
 
-/* ================================
+/* =========================================
    FOOTER
-================================ */
+========================================= */
 
 footer {
   padding: 30px 0;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top:
+    1px solid rgba(255, 255, 255, 0.06);
 
   text-align: center;
 
@@ -1085,9 +1171,9 @@ footer {
 }
 
 
-/* ================================
+/* =========================================
    SCROLLBAR
-================================ */
+========================================= */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -1098,15 +1184,16 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.45);
+  background:
+    rgba(139, 92, 246, 0.45);
 
   border-radius: 20px;
 }
 
 
-/* ================================
-   900px RESPONSIVE
-================================ */
+/* =========================================
+   TABLET / 900px
+========================================= */
 
 @media (max-width: 900px) {
 
@@ -1128,6 +1215,7 @@ footer {
 
   .hero p.bio {
     margin-left: auto;
+
     margin-right: auto;
   }
 
@@ -1150,18 +1238,20 @@ footer {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
   }
 
   .project-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
   }
 }
 
 
-/* ================================
-   768px RESPONSIVE
-================================ */
+/* =========================================
+   TABLET / 768px
+========================================= */
 
 @media (max-width: 768px) {
 
@@ -1169,7 +1259,9 @@ footer {
     position: absolute;
 
     top: 80px;
+
     left: 4%;
+
     right: 4%;
 
     display: none;
@@ -1184,9 +1276,11 @@ footer {
 
     border-radius: 18px;
 
-    background: rgba(13, 17, 36, 0.97);
+    background:
+      rgba(13, 17, 36, 0.97);
 
-    border: 1px solid var(--card-border);
+    border:
+      1px solid var(--card-border);
 
     backdrop-filter: blur(20px);
   }
@@ -1199,6 +1293,7 @@ footer {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
   }
 
@@ -1214,14 +1309,15 @@ footer {
 }
 
 
-/* ================================
-   600px MOBILE
-================================ */
+/* =========================================
+   MOBILE / 600px
+========================================= */
 
 @media (max-width: 600px) {
 
   section {
     padding-left: 18px;
+
     padding-right: 18px;
   }
 
@@ -1229,30 +1325,54 @@ footer {
     width: 100%;
   }
 
-  /* ----------------------------
+
+  /* -----------------------------------------
      HOME
-  ---------------------------- */
+  ----------------------------------------- */
 
   #home {
     min-height: auto;
 
-    padding-top: 120px;
+    /*
+      TOP SPACE REDUCED
+      Earlier: 120px
+      Now: 90px
+    */
+    padding-top: 90px;
 
     padding-bottom: 50px;
 
     align-items: flex-start;
   }
 
+
+  /* -----------------------------------------
+     HERO GRID
+  ----------------------------------------- */
+
   .hero-grid {
     grid-template-columns: 1fr;
 
+    /*
+      Space between text/social
+      and image
+    */
     gap: 45px;
 
     width: 100%;
+
+    max-width: 100%;
   }
+
+
+  /* -----------------------------------------
+     HERO CONTENT
+  ----------------------------------------- */
 
   .hero {
     width: 100%;
+
+    max-width: 100%;
   }
 
   .eyebrow {
@@ -1261,6 +1381,10 @@ footer {
     padding: 7px 11px;
 
     margin-bottom: 16px;
+
+    max-width: 100%;
+
+    text-align: center;
   }
 
   .hero h1 {
@@ -1283,14 +1407,17 @@ footer {
     line-height: 1.75;
   }
 
-  /* ----------------------------
+
+  /* -----------------------------------------
      BUTTONS
-  ---------------------------- */
+  ----------------------------------------- */
 
   .btn-row {
     justify-content: center;
 
     gap: 10px;
+
+    max-width: 100%;
   }
 
   .btn {
@@ -1299,9 +1426,10 @@ footer {
     font-size: 13px;
   }
 
-  /* ----------------------------
+
+  /* -----------------------------------------
      SOCIAL ICONS
-  ---------------------------- */
+  ----------------------------------------- */
 
   .social-row {
     justify-content: center;
@@ -1315,25 +1443,33 @@ footer {
     z-index: 20;
 
     gap: 10px;
+
+    max-width: 100%;
   }
 
   .social-row a {
     width: 40px;
+
     height: 40px;
 
     flex-shrink: 0;
   }
 
-  /* ----------------------------
-     3D IMAGE
-  ---------------------------- */
+
+  /* -----------------------------------------
+     3D GIRL IMAGE
+  ----------------------------------------- */
 
   .hero-art {
     width: 100%;
 
-    height: 390px;
+    /*
+      Increased from 390px
+      to give image more room
+    */
+    height: 430px;
 
-    min-height: 390px;
+    min-height: 430px;
 
     position: relative;
 
@@ -1346,12 +1482,18 @@ footer {
     align-items: flex-start;
 
     justify-content: center;
+
+    max-width: 100%;
   }
 
   .hero-art .art-frame {
-    width: min(75vw, 290px);
+    /*
+      Increased image size
+      from 290px to 320px
+    */
+    width: min(82vw, 320px);
 
-    max-width: 290px;
+    max-width: 320px;
 
     aspect-ratio: 3 / 4;
 
@@ -1360,51 +1502,61 @@ footer {
     z-index: 2;
   }
 
+
+  /* -----------------------------------------
+     FLOATING ELEMENTS
+  ----------------------------------------- */
+
   .floaty {
     z-index: 5;
 
     font-size: 11px;
 
     padding: 8px 10px;
+
+    max-width: 120px;
   }
 
   .f1 {
-    left: 4%;
+    left: 2%;
 
     top: 10px;
   }
 
   .f2 {
-    right: 4%;
+    right: 2%;
 
     bottom: 30px;
   }
 
   .f3 {
-    right: 2%;
+    right: 0;
 
     top: 48%;
   }
 
-  /* ----------------------------
+
+  /* -----------------------------------------
      STATS
-  ---------------------------- */
+  ----------------------------------------- */
 
   .stat-row {
     grid-template-columns: 1fr;
   }
 
-  /* ----------------------------
+
+  /* -----------------------------------------
      SKILLS
-  ---------------------------- */
+  ----------------------------------------- */
 
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
-  /* ----------------------------
+
+  /* -----------------------------------------
      CONTACT
-  ---------------------------- */
+  ----------------------------------------- */
 
   .contact-card {
     padding: 24px;
@@ -1414,9 +1566,10 @@ footer {
     font-size: 26px;
   }
 
-  /* ----------------------------
+
+  /* -----------------------------------------
      SECTION TITLE
-  ---------------------------- */
+  ----------------------------------------- */
 
   .section-title {
     margin-bottom: 40px;
@@ -1428,14 +1581,16 @@ footer {
 }
 
 
-/* ================================
-   400px SMALL MOBILE
-================================ */
+/* =========================================
+   SMALL MOBILE / 400px
+========================================= */
 
 @media (max-width: 400px) {
 
   #home {
-    padding-top: 110px;
+    padding-top: 80px;
+
+    padding-bottom: 40px;
   }
 
   .hero h1 {
@@ -1458,19 +1613,26 @@ footer {
 
   .social-row a {
     width: 38px;
+
     height: 38px;
   }
 
-  .hero-art {
-    height: 370px;
 
-    min-height: 370px;
+  /*
+    Slightly smaller only for
+    very small phones
+  */
+
+  .hero-art {
+    height: 400px;
+
+    min-height: 400px;
   }
 
   .hero-art .art-frame {
-    width: 270px;
+    width: 290px;
 
-    max-width: 270px;
+    max-width: 290px;
   }
 
   .floaty {
