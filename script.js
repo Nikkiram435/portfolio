@@ -379,7 +379,7 @@ const projects = [
     ],
 
     github:
-      "https://github.com/ritikjshete/PPE-Detection-master",
+      "https://github.com/Nikkiram435/PPE-Detection-Master",
 
     live:
       null
