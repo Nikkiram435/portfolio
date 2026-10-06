@@ -288,6 +288,67 @@ document
 // ==========================================================
 
 const projects = [
+  {
+    name:
+      "RAAHIX – AI Travel Companion",
+
+    card:
+      "A full-stack AI travel planner where users create trips, plan day by day, track expenses, explore places in any city and chat with an AI assistant. Built with FastAPI, PostgreSQL and vanilla JavaScript, with secure login and live weather forecasts.",
+
+    desc:
+      "RAAHIX is a full-stack travel planning web app. Users can sign up, create trips with dates and budgets, plan activities for each day, track expenses on a chart, and check the weather forecast for their destination. An AI assistant powered by Google Gemini answers travel questions and remembers the conversation, and an Explore page loads places from OpenStreetMap data with infinite scroll. The backend keeps all API keys on the server, uses caching and rate limiting to protect free API quotas, and makes sure every user can only see their own data.",
+
+    features: [
+
+      "Secure Authentication – Sign up and log in using JWT, with passwords hashed using bcrypt.",
+
+      "Trip Planner – Create trips, add activities for each day and view a day-by-day itinerary.",
+
+      "Budget Tracker – Add expenses by category and see spending on a Chart.js doughnut chart.",
+
+      "AI Travel Assistant – Chat with a Google Gemini powered assistant that remembers earlier messages, with an automatic fallback model.",
+
+      "Explore Places – Search any city and scroll through restaurants, stays and attractions loaded from OpenStreetMap data.",
+
+      "Place Details and Saved Places – Open a place for its details and save favourites to your account.",
+
+      "Weather Forecast – Shows a 16-day forecast for the trip destination using Open-Meteo.",
+
+      "Flights and Festivals – Opens Google Flights for a chosen route and lists major Indian festivals by month.",
+
+      "Responsive UI – Dark glassmorphism design that works on desktop and mobile.",
+
+      "Tested Backend – Automated pytest tests for login, trips, saved places and places search, including checks that one user cannot access another user's data."
+
+    ],
+
+    tools: [
+
+      "Python",
+      "FastAPI",
+      "SQLAlchemy",
+      "PostgreSQL",
+      "JWT",
+      "bcrypt",
+      "Google Gemini API",
+      "Geoapify API",
+      "Open-Meteo API",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Chart.js",
+      "pytest",
+      "Railway"
+
+    ],
+
+    github:
+      "https://github.com/Nikkiram435/raahix",
+
+    live:
+      "https://raahix-production.up.railway.app/"
+
+  },
 
   {
     name:
